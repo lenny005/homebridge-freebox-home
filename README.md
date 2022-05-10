@@ -1,4 +1,3 @@
-# ⚠️ This project is no longer maintained ⚠️
 Due to changes in the Freebox Home product and tech roadmap, this project wont be maintained, issues and pull requests will be disabled.
 
 <p align="center">
@@ -16,7 +15,7 @@ It currently supports all the sensors (door/window and motion), the security sys
 
 - Clone the repo
 ```
-git clone https://github.com/fbx/homebridge-freebox-home.git
+git clone https://github.com/lenny005/homebridge-freebox-home
 ```
 - Go the the homebridge-freebox-home directory
 ```
@@ -29,13 +28,7 @@ npm run homebridge-install
 ```
 - Start Homebridge
 
-You can simply start Homebridge by typing :
-```
-homebridge
-```
-We recommand using a node process manager such as `pm2`.
-```
-pm2 start /usr/local/bin/homebridge
+Check that you already installed homebridge
 ```
 - Then start the server
 
@@ -55,10 +48,7 @@ Go into the preference of FreeboxOS to allow the app to access you home items an
 
 In your browser go to url : `http://{host}:8888/api/homebridge/conf`replacing {host} the ip of the host machine.
 
-Make sure it returns `true`, then simply restart your Homebridge instance. If you are using `pm2`, simply type
-```
-pm2 restart Homebridge
-```
+Make sure it returns `true`, then simply restart your Homebridge instance.
 
 ## The actual Freebox API
 The Freebox home api is a very complex API, with many endpoints, and many data and information. These data are supposed to be used in clients for the Home features of the Freebox Delta such as the Freebox companion mobile app, used to manage and configure every aspect of the Freebox Home Security items (camera, sensors, alarm...).
