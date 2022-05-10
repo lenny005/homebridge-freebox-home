@@ -7,7 +7,7 @@ module.exports = function(sensorController) {
 
     this.setup = function(config, callback) {
         let homedir = require('os').homedir()
-        let confFilePath = homedir+'/.homebridge/config.json'
+        let confFilePath = '/var/lib/homebridge/config.json'
 
         var alarmEnabled = false
         var cameraEnabled = false
@@ -81,12 +81,7 @@ module.exports = function(sensorController) {
                         "motion": true,
                         "videoConfig": {
                             "source": '-re -i rtsp://'+cam.ip+'/live',
-                            "maxStreams": 1,
-                            "maxWidth": 1280,
-                            "maxHeight": 720,
-                            "maxBitrate": 1000,
-                            "maxFPS": 15,
-                            "audio": false,
+                            "audio": true,
                             "additionalCommandline": "-pix_fmt yuv420p -x264-params intra-refresh=1:bframes=0"
                         }
                     }
