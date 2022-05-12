@@ -9,22 +9,6 @@ if [ -d ${CURL_EXISTS} ]; then
     sudo apt-get --assume-yes install curl
 fi
 
-NODE_EXISTS=`which node`
-
-if [ -d ${NODE_EXISTS} ]; then
-    echo "[i] Installing nodejs..."
-    # curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-    sudo apt-get --assume-yes install nodejs
-    sudo apt-get --assume-yes install npm
-fi
-
-if [ ! -d /usr/local/lib/node_modules/n ]; then
-    echo "[i] Checking node version"
-    sudo npm cache clean -f
-    sudo npm install -g n
-    sudo n 12.16.2
-fi
-
 PATH="$PATH"
 
 echo "[i] Check npm version"
