@@ -11,19 +11,16 @@ fi
 
 PATH="$PATH"
 
-echo "[i] Check npm version"
-sudo npm install npm@latest -g
-
 echo "[i] Installing homebridge plugins..."
-npm run homebridge-install
+sudo pnpm run homebridge-install
 
 if [ ! -d /usr/local/lib/node_modules/pm2 ]; then
     echo "[i] Installing node process manager..."
-    sudo npm install -g pm2
+    sudo pnpm install -g pm2
 fi
 
 echo "[i] Installing dependancies for freebox home server"
-npm install
+sudo pnpm install
 
 echo "[i] Starting services"
 pm2
