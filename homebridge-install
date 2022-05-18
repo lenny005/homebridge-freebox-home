@@ -1,4 +1,4 @@
-sudo npm install -g homebridge-http-securitysystem@latest
-sudo npm install -g homebridge-http-contact-sensor@latest
-sudo npm install -g homebridge-http-pir-motion-sensor@latest
-sudo npm install -g homebridge-camera-ffmpeg@latest
+sudo pnpm install -g homebridge-http-securitysystem@latest
+sudo pnpm install -g homebridge-http-contact-sensor@latest
+sudo pnpm install -g homebridge-http-pir-motion-sensor@latest
+sudo pnpm install -g homebridge-camera-ffmpeg@latest
