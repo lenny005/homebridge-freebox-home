@@ -21,15 +21,15 @@ cd homebridge-freebox-home
 ```
 - First install dependencies via homebridge interface terminal
 ```
-pnpm install
-pnpm run homebridge-install
+npm install
+npm run homebridge-install
 ```
 - Start Homebridge
 Check that you already installed homebridge
 
 - Then start the server
 ```
-pnpm run start
+npm run start
 ```
 That will automatically setup the environement, pair to the local freebox server and build the homebridge config file.
 So you might want to stay near the freebox to allow the app through the LCD screen.
