@@ -19,7 +19,7 @@ git clone https://github.com/lenny005/homebridge-freebox-home
 ```
 cd homebridge-freebox-home
 ```
-- First install dependencies
+- First install dependencies via homebridge interface terminal
 ```
 pnpm install
 pnpm run homebridge-install
