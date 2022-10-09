@@ -21,6 +21,8 @@ cd homebridge-freebox-home
 ```
 - First install dependencies via homebridge interface terminal
 ```
+npm install -g npm-check-updates
+ncu -u
 npm install
 npm run homebridge-install
 ```
